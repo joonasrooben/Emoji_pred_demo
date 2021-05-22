@@ -23,7 +23,7 @@ inn = st.text_input('Enter some text')
 #Predict button
 if st.button('Predict'):
     model = joblib.load('tf-idf_twit_model.pkl')
-    qry = model.transform(inn)
+    qry = model.transform([inn])
     index = cosine_similarity(qry,embeddings)[0]
     
     st.markdown(f'### Prediction is {inv[lables[index]]}')
