@@ -26,4 +26,4 @@ if st.button('Predict'):
     qry = model.transform([inn])
     index = cosine_similarity(qry,embeddings)[0]
     
-    st.markdown(f'### Prediction is {inv[lables[index]]}')
+    st.markdown(f'### Prediction is {inv_voc[lables[index]]}')
