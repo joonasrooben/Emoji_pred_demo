@@ -25,6 +25,7 @@ for m in voc:
   inv_voc[voc[m]] = m
   
 output_dir = './bert_twitter'
+output_dir = "https://drive.google.com/drive/folders/1jfFe3Xphvn8M6LpSVAQxzAaeu4voru-n?usp=sharing"
 model = DistilBertForSequenceClassification.from_pretrained(output_dir)
 tokenizer = DistilBertTokenizer.from_pretrained(output_dir)
 
